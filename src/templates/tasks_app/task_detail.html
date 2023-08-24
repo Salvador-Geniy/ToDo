@@ -1,0 +1,13 @@
+{% extends 'tasks_app/main.html' %}
+{% block content %}
+
+<a href="{% url 'tasks' %}">Go Back</a>
+
+<h2>{{ task.title }}</h2>
+{% if task.description %}
+  <p>{{ task.description }}</p>
+{% else %}
+  <p>No description</p>
+{% endif %}
+
+{% endblock content %}
