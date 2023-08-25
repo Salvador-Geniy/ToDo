@@ -39,7 +39,7 @@
                 <div class="task-icon task-incomplete-icon"></div>
                 <a href="{% url 'task-update' task.id %}">{{ task }}</a>
             </div>
-            <a class="delete-link" href="{% url 'task-delete' task.id">&#215;</a>
+            <a class="delete-link" href="{% url 'task-delete' task.id %}">&#215;</a>
         {% endif %}
     </div>
     {% endfor %}
